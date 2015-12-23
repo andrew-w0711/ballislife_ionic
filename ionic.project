@@ -1,0 +1,14 @@
+{
+  "name": "ionBallislife",
+  "app_id": "4f0b7757",
+  "gulpStartupTasks": [
+    "sass",
+    "templatecache",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ],
+  "documentRoot": "www"
+}

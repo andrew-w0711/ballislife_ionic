@@ -1,0 +1,85 @@
+
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content class="post-size-14px">
+    <ion-nav-bar class="bar app-top-bar">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-search" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu class="main-menu" side="left" width="230">
+    <ion-content>
+      <ion-list>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.home">
+          <i class="icon ion-home"></i>
+          <!--<i class="icon ion-quote"></i>-->
+          <h2 class="menu-text">Recent posts</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.exclusive">
+          <!-- <i class="icon ion-home"></i> -->
+          <i class="icon ion-quote"></i>
+          <h2 class="menu-text">Exclusive Content</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.hs">
+          <!-- <i class="icon ion-home"></i> -->
+          <i class="icon ion-social-dribbble-outline"></i>
+          <h2 class="menu-text">High School</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.nba">
+          <!-- <i class="icon ion-home"></i> -->
+          <i class="icon ion-quote"></i>
+          <h2 class="menu-text">NBA</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.college">
+          <!-- <i class="icon ion-home"></i> -->
+          <i class="icon ion-university"></i>
+          <h2 class="menu-text">College</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.videos">
+          <!-- <i class="icon ion-home"></i> -->
+          <i class="icon ion-videocamera"></i>
+          <h2 class="menu-text">Videos</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.lifestyle">
+          <!-- <i class="icon ion-home"></i> -->
+          <i class="icon ion-quote"></i>
+          <h2 class="menu-text">Lifestyle</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close href="http://shop.ballislife.com/">
+          <!-- <i class="icon ion-home"></i> -->
+          <i class="icon ion-android-cart"></i>
+          <h2 class="menu-text">Shop</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.bookmarks">
+          <i class="icon ion-bookmark"></i>
+          <h2 class="menu-text">Saved for later</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.settings">
+          <i class="icon ion-gear-a"></i>
+          <h2 class="menu-text">My settings</h2>
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close ui-sref="app.contact">
+          <i class="icon ion-location"></i>
+          <h2 class="menu-text">Contact</h2>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu class="multi-level-push-menu" side="right" ng-controller="PushMenuCtrl">
+    <ion-content has-bouncing="false" scroll="false">
+      <wp-search>
+      </wp-search>
+      <push-menu menu="menu"></push-menu>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

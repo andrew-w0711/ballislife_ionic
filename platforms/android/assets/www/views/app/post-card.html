@@ -1,0 +1,31 @@
+<div class="card-header">
+
+  <a class="titleLink" ui-sref="app.post({postId :post.id})">
+    <h1 ng-bind-html="post.title | rawHtml"></h1>
+  </a>
+  <div class="card-content postImage">
+    <p>
+      <a class="titleLink" ui-sref="app.post({postId :post.id})">
+        <img id="myImg" ng-src="{{post.attachments[0].url | s3link}}"  onerror="this.style.display='none'"//>
+      </a>
+    </p>
+  </div>
+  <h2>Posted
+    <span am-time-ago="post.date"></span>
+    by
+    <span class="author" ng-bind-html="post.author.nickname | rawHtml"></span>
+  </h2>
+</div>
+<!--<div class="card-content" ng-bind-html="post.content | rawHtml"></div>-->
+<div class="card-footer">
+  <a class="card-button secondary" ng-click="sharePost(post.url)">SHARE</a>
+  <a class="card-button primary" ui-sref="app.post({postId :post.id})">READ MORE</a>
+  <!--
+  <a ng-show="post.comment_count > 0" class="card-button comments" ui-sref="app.post({postId :post.id})">
+    <i class="icon ion-chatbox"></i>{{post.comment_count}}
+  </a>
+-->
+  <a class="card-button secondary bookmark" ng-click="bookmarkPost(post)">
+    <i class="icon ion-bookmark"></i>
+  </a>
+</div>

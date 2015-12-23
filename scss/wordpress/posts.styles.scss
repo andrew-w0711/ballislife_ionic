@@ -1,0 +1,163 @@
+// Audio fix
+.wp-audio-shortcode
+{
+ visibility: visible !important;
+ padding: 0px $sides-padding;
+}
+
+
+ion-content
+{
+  background: $content-bg;
+  font-family: 'Roboto', sans-serif;
+  vertical-align:middle;
+}
+
+
+.card-header
+{
+  padding:16px;
+  margin-bottom: -10px;
+  min-height: 80px;
+}
+
+.card-footer
+{
+  border-top: 1px solid lighten($content-color,60);
+  padding:16px;
+  margin-top:20px;
+}
+
+.card-button
+{
+  font-size: 15px;
+  padding: 6px;
+  text-decoration: none;
+
+  &.primary
+  {
+    color: $read-more-color;
+  }
+
+  &.secondary
+  {
+    color: $content-color;
+  }
+
+  font-weight: 500;
+}
+
+.card-content
+{
+  // Fix audio tag not displaying to 100% on ios
+  audio::-webkit-media-controls-panel
+  {
+    width:100% !important;
+  }
+
+  p
+  {
+    padding: 0px $sides-padding;
+  }
+
+  img
+  {
+    height: auto;
+    width: calc(100% + 5px + 0px) !important;
+    margin-left: -webkit-calc(-16px - 8px) !important;
+    margin-left: calc(7px - 11px) !important;
+    margin-top: 15px;
+  }
+
+  ul, ol
+  {
+    list-style-type: square;
+    padding: 0 0 0 40px;
+    margin: 14px 0px;
+  }
+
+  iframe
+  {
+    height: 390px;
+    @include calc(width, "100% + #{($sides-padding*2)}");
+    margin-left: - $sides-padding;
+  }
+
+  blockquote
+  {
+    font-style: italic;
+    font-weight: 300;
+    margin: 20px 20px;
+    border: none;
+    padding: 0px;
+
+    p
+    {
+      font-size: 16px;
+    }
+  }
+}
+
+.author
+{
+  font-weight:400;
+  color: $anchor-color;
+}
+
+.omc-video-container{
+  height: 420px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .omc-video-container{
+    height: 220px;
+  }
+  iframe
+  {
+    height: 220px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  #storify{
+    height: 500px;
+  }
+
+  #storify iframe{
+    height: 100% !important;
+  }
+}
+
+a
+{
+  font-weight:bolder;
+  color: $anchor-color;
+  text-decoration: none;
+}
+
+h1
+{
+  font-size:17px;
+  font-weight:400;
+  margin-bottom: 0px !important;
+}
+
+h2
+{
+  margin:0px;
+  font-size:12px;
+  line-height:2.5;
+  color: lighten($content-color, 10);
+  font-weight: 500;
+  margin-bottom: -7px !important;
+}
+
+
+.post h2{
+  margin-top: -10px !important;
+  font-weight: 900 !important;
+}

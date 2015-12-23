@@ -1,0 +1,228 @@
+.home-view,
+.category-view
+{
+  @import "scss/wordpress/posts.styles";
+
+  .posts
+  {
+    display:block;
+    position:relative;
+    top:-10px;
+    border-radius:.25rem;
+    overflow:hidden;
+    padding: 8px;
+  }
+
+  .post-card
+  {
+    //margin: 8px 0px 24px 0px;
+    position:relative;
+    z-index:2;
+    //background: $post-card-bg;
+    background: none;
+    border-radius:3px;
+    margin-bottom: -35px;
+  }
+
+  .posts{
+    padding: 0 !important;
+  }
+
+  .card-button.bookmark
+  {
+    float: left;
+    padding: 0px;
+
+    i
+    {
+      padding:4px;
+    }
+    float: left;
+        padding: 0px;
+        font-size: 34px;
+        margin-top: -26px;
+        position: relative;
+        z-index: 1;
+  }
+
+  .card-button.comments
+  {
+    padding: 0px;
+    color: $content-color;
+    i
+    {
+      padding:4px;
+    }
+  }
+}
+
+.home-view h1{
+  font-size: 19px;
+font-weight: 500;
+margin-bottom: 0px !important;
+color: #fff;
+padding: 5px;
+min-height: 45px;
+vertical-align: middle;
+display: inline-flex;
+width:100%;
+}
+
+.titleLink h1 span{
+  color: #fff !important;
+  width: 94%;
+  display: block;
+  padding-top: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.cardCat{
+  position: relative;
+top: -39px;
+padding: 5px !important;
+background: red;
+color: #fff;
+min-width: 75px;
+max-width: 95px;
+text-align: center;
+font-weight: bold;
+}
+
+.card-content-outer{
+  position: relative;
+    top: -26px;
+}
+
+.home-view .card-content p, {
+    padding: 0px 0px !important;
+}
+
+.post-card .card-header{
+  padding: 0 !important;
+}
+
+ .postHeader{
+  padding: 16px;
+margin-bottom: -10px;
+/*margin-top: -31%;*/
+background: #000000 !important;
+display: block;
+position: relative;
+}
+
+.postCat{
+  min-height: 60px;
+}
+
+.post-view .postHeader h1{
+  color: #fff;
+  font-weight: 800;
+}
+
+.bar.app-top-bar .title {
+    text-align: left;
+}
+
+.card-content h1, .h1, h2, .h2, h3, .h3 {
+    margin: 20px 10px 10px 10px;
+}
+
+.postCardTitleBlock{
+  display: flex !important;
+  width: 100%;
+  min-height: 45px;
+  background: #000;
+  overflow:auto;
+}
+
+.postCardTitleLink{
+  width: 90%;
+  display: block;
+  float: left;
+}
+
+.postCardTitleBlock .bookmark {
+    float: left;
+    padding: 4% 0 2% 0 !important;
+    font-size: 34px;
+    margin-top: 0 !important;
+    height: 100% !important;
+    width: 5% !important;
+    vertical-align: middle !important;
+    display: inline-flex !important;
+}
+
+.postCardTitleBlock .activated i{
+    color: #9C9C9C;
+}
+
+.post-card .bookmark{
+  display: block;
+  float: left;
+}
+
+#postPageImg{
+  position: relative;
+  top: 0;
+  display: block;
+  z-index: 5;
+  margin-top: 45px;
+}
+
+#postPageImg .postHeader h2, span{
+  color:#DEDEDE !important;
+}
+
+.post-view ion-content {
+    vertical-align: middle;
+    padding-top: 25% !important;
+}
+
+p{
+  margin: 0 !important;
+}
+
+/* card category label colors */
+
+.LOL {
+  background: #ffde00;
+  color:#000;
+}
+
+.Blogs{
+  background: #000;
+}
+
+.Kicks{
+  background: #001ca8;
+}
+
+.East, .West, .South, .Midwest, .High, .Exclusive{
+  background: #4463ff !important;
+}
+
+.Events, .Commercials{
+  background: #fff;
+  color: #000;
+}
+
+.College{
+  background: #e86200;
+}
+
+.Videos{
+  background: #1ba300;
+}
+
+.NBA{
+  background: red;
+}
+
+.Dunk{
+  background: #008aa3;
+}
+
+.Streetball{
+  background: #a30026;
+}
